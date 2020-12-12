@@ -1,0 +1,388 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-12-12T12:21:54.331Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6604555000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "seleniumSteps.setUp()"
+            }
+          }
+        ],
+        "line": 30,
+        "name": "To register in the application",
+        "description": "",
+        "id": "to-signup-in-the-application-and-send-mail;to-register-in-the-application;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 727392300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "seleniumSteps.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7491465200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "navigate to \"http://elearningm1.upskills.in/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://elearningm1.upskills.in/\"",
+                  "offset": 12
+                }
+              ],
+              "location": "seleniumSteps.navigate_to(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1086824800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Signup link is available",
+            "match": {
+              "location": "seleniumSteps.signup_link_is_available()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5431978200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "we click on signup link",
+            "match": {
+              "location": "seleniumSteps.we_click_on_Signup_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1121002100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Registration page appears",
+            "match": {
+              "location": "seleniumSteps.registration_page_appears()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1123113000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "we pass \"Anu\" in first name field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Anu",
+                  "offset": 9
+                }
+              ],
+              "location": "seleniumSteps.we_pass_in_first_name_field(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1118841600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "pass \"Suresh\" in last name field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Suresh",
+                  "offset": 6
+                }
+              ],
+              "location": "seleniumSteps.pass_in_last_name_field(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1162926700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "enter \"test5@gmail.com\" in email field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test5@gmail.com",
+                  "offset": 7
+                }
+              ],
+              "location": "seleniumSteps.enter_in_email_field(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1167296800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "pass valid \"AnuAnu5\" in username field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "AnuAnu5",
+                  "offset": 12
+                }
+              ],
+              "location": "seleniumSteps.pass_valid_in_username_field(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1162976700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "we give a valid \"Dec@2020\" in password field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Dec@2020\"",
+                  "offset": 16
+                }
+              ],
+              "location": "seleniumSteps.we_give_a_valid_in_password_field(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1164042000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "we confirm the \"Dec@2020\" in confirm password field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Dec@2020\"",
+                  "offset": 15
+                }
+              ],
+              "location": "seleniumSteps.we_confirm_the_in_confirm_password_field(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5662105000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "click register",
+            "match": {
+              "location": "seleniumSteps.click_register()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1097116500,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "we are in confirmation page",
+            "match": {
+              "location": "seleniumSteps.we_are_in_confirmation_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1165874900,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "we click on Profile button",
+            "match": {
+              "location": "seleniumSteps.we_click_on_Profile_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5103328800,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "validate if profile name is \"Anu Suresh\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Anu Suresh\"",
+                  "offset": 28
+                }
+              ],
+              "location": "seleniumSteps.we_validate_the(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3204693400,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "click on Homepage",
+            "match": {
+              "location": "seleniumSteps.click_on_Homepage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1087379200,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "once Profile menu appears",
+            "match": {
+              "location": "seleniumSteps.once_Profile_menu_appears()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3476364400,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "click on Compose",
+            "match": {
+              "location": "seleniumSteps.click_on_Compose()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1085299500,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "we are on compose message page",
+            "match": {
+              "location": "seleniumSteps.we_are_on_compose_message_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5288424200,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "enter the \"naveen\" in send to field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"naveen\"",
+                  "offset": 10
+                }
+              ],
+              "location": "seleniumSteps.enter_the_receiver_name_in_send_to_field(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1164665200,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "type a \"test only\" in subject field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"test only\"",
+                  "offset": 7
+                }
+              ],
+              "location": "seleniumSteps.type_a_subject_in_subject_field(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1145402500,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "type the \"mailmessage\" in message field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"mailmessage\"",
+                  "offset": 9
+                }
+              ],
+              "location": "seleniumSteps.type_the_in_message_field(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5154420800,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "click send message button",
+            "match": {
+              "location": "seleniumSteps.click_send_message_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5117213400,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "check if confirmation message is displayed",
+            "match": {
+              "location": "seleniumSteps.check_if_confirmation_message_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "To signup in the application and send mail",
+    "description": "",
+    "id": "to-signup-in-the-application-and-send-mail",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Selenium.feature",
+    "tags": []
+  }
+]

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="69.21788">
+<testcase classname="To signup in the application and send mail" name="To register in the application" time="69.21788">
+<system-out><![CDATA[Given navigate to "http://elearningm1.upskills.in/".........................passed
+When Signup link is available...............................................passed
+And we click on signup link.................................................passed
+When Registration page appears..............................................passed
+Then we pass "Anu" in first name field......................................passed
+And pass "Suresh" in last name field........................................passed
+And enter "test5@gmail.com" in email field..................................passed
+And pass valid "AnuAnu5" in username field..................................passed
+And we give a valid "Dec@2020" in password field............................passed
+And we confirm the "Dec@2020" in confirm password field.....................passed
+Then click register.........................................................passed
+When we are in confirmation page............................................passed
+And we click on Profile button..............................................passed
+Then validate if profile name is "Anu Suresh"...............................passed
+Then click on Homepage......................................................passed
+And once Profile menu appears...............................................passed
+Then click on Compose.......................................................passed
+Given we are on compose message page........................................passed
+Then enter the "naveen" in send to field....................................passed
+And type a "test only" in subject field.....................................passed
+And type the "mailmessage" in message field.................................passed
+And click send message button...............................................passed
+Then check if confirmation message is displayed.............................passed
+]]></system-out>
+</testcase>
+</testsuite>

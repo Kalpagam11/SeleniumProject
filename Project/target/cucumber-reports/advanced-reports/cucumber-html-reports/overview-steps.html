@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+        <th>Number</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Way2Automation Cucumber Reports</td>
+        <td>1</td>
+      <td>12 Dec 2020, 17:53</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">seleniumSteps.check_if_confirmation_message_is_displayed()</td>
+              <td>1</td>
+              <td class="duration" data-value="5117213400">5.117</td>
+              <td class="duration" data-value="5117213400">5.117</td>
+              <td class="duration" data-value="5117213400">5.117</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">seleniumSteps.click_on_Compose()</td>
+              <td>1</td>
+              <td class="duration" data-value="3476364400">3.476</td>
+              <td class="duration" data-value="3476364400">3.476</td>
+              <td class="duration" data-value="3476364400">3.476</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">seleniumSteps.click_on_Homepage()</td>
+              <td>1</td>
+              <td class="duration" data-value="3204693400">3.204</td>
+              <td class="duration" data-value="3204693400">3.204</td>
+              <td class="duration" data-value="3204693400">3.204</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">seleniumSteps.click_register()</td>
+              <td>1</td>
+              <td class="duration" data-value="5662105000">5.662</td>
+              <td class="duration" data-value="5662105000">5.662</td>
+              <td class="duration" data-value="5662105000">5.662</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">seleniumSteps.click_send_message_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="5154420800">5.154</td>
+              <td class="duration" data-value="5154420800">5.154</td>
+              <td class="duration" data-value="5154420800">5.154</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">seleniumSteps.enter_in_email_field(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1162926700">1.162</td>
+              <td class="duration" data-value="1162926700">1.162</td>
+              <td class="duration" data-value="1162926700">1.162</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">seleniumSteps.enter_the_receiver_name_in_send_to_field(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="5288424200">5.288</td>
+              <td class="duration" data-value="5288424200">5.288</td>
+              <td class="duration" data-value="5288424200">5.288</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">seleniumSteps.navigate_to(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="7491465200">7.491</td>
+              <td class="duration" data-value="7491465200">7.491</td>
+              <td class="duration" data-value="7491465200">7.491</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">seleniumSteps.once_Profile_menu_appears()</td>
+              <td>1</td>
+              <td class="duration" data-value="1087379200">1.087</td>
+              <td class="duration" data-value="1087379200">1.087</td>
+              <td class="duration" data-value="1087379200">1.087</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">seleniumSteps.pass_in_last_name_field(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1118841600">1.118</td>
+              <td class="duration" data-value="1118841600">1.118</td>
+              <td class="duration" data-value="1118841600">1.118</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">seleniumSteps.pass_valid_in_username_field(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1167296800">1.167</td>
+              <td class="duration" data-value="1167296800">1.167</td>
+              <td class="duration" data-value="1167296800">1.167</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">seleniumSteps.registration_page_appears()</td>
+              <td>1</td>
+              <td class="duration" data-value="1121002100">1.121</td>
+              <td class="duration" data-value="1121002100">1.121</td>
+              <td class="duration" data-value="1121002100">1.121</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">seleniumSteps.setUp()</td>
+              <td>1</td>
+              <td class="duration" data-value="6604555000">6.604</td>
+              <td class="duration" data-value="6604555000">6.604</td>
+              <td class="duration" data-value="6604555000">6.604</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">seleniumSteps.signup_link_is_available()</td>
+              <td>1</td>
+              <td class="duration" data-value="1086824800">1.086</td>
+              <td class="duration" data-value="1086824800">1.086</td>
+              <td class="duration" data-value="1086824800">1.086</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">seleniumSteps.tearDown(Scenario)</td>
+              <td>1</td>
+              <td class="duration" data-value="727392300">0.727</td>
+              <td class="duration" data-value="727392300">0.727</td>
+              <td class="duration" data-value="727392300">0.727</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">seleniumSteps.type_a_subject_in_subject_field(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1164665200">1.164</td>
+              <td class="duration" data-value="1164665200">1.164</td>
+              <td class="duration" data-value="1164665200">1.164</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">seleniumSteps.type_the_in_message_field(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1145402500">1.145</td>
+              <td class="duration" data-value="1145402500">1.145</td>
+              <td class="duration" data-value="1145402500">1.145</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">seleniumSteps.we_are_in_confirmation_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="1097116500">1.097</td>
+              <td class="duration" data-value="1097116500">1.097</td>
+              <td class="duration" data-value="1097116500">1.097</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">seleniumSteps.we_are_on_compose_message_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="1085299500">1.085</td>
+              <td class="duration" data-value="1085299500">1.085</td>
+              <td class="duration" data-value="1085299500">1.085</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">seleniumSteps.we_click_on_Profile_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="1165874900">1.165</td>
+              <td class="duration" data-value="1165874900">1.165</td>
+              <td class="duration" data-value="1165874900">1.165</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">seleniumSteps.we_click_on_Signup_link()</td>
+              <td>1</td>
+              <td class="duration" data-value="5431978200">5.431</td>
+              <td class="duration" data-value="5431978200">5.431</td>
+              <td class="duration" data-value="5431978200">5.431</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">seleniumSteps.we_confirm_the_in_confirm_password_field(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1164042000">1.164</td>
+              <td class="duration" data-value="1164042000">1.164</td>
+              <td class="duration" data-value="1164042000">1.164</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">seleniumSteps.we_give_a_valid_in_password_field(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1162976700">1.162</td>
+              <td class="duration" data-value="1162976700">1.162</td>
+              <td class="duration" data-value="1162976700">1.162</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">seleniumSteps.we_pass_in_first_name_field(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1123113000">1.123</td>
+              <td class="duration" data-value="1123113000">1.123</td>
+              <td class="duration" data-value="1123113000">1.123</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">seleniumSteps.we_validate_the(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="5103328800">5.103</td>
+              <td class="duration" data-value="5103328800">5.103</td>
+              <td class="duration" data-value="5103328800">5.103</td>
+              <td class="passed">100.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>25</td>
+            <td>25</td>
+            <td class="duration">2.764</td>
+            <td class="duration">7.491</td>
+            <td class="duration">1:9.114</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
